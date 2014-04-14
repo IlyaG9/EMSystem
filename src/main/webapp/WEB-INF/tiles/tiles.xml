@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd"> 
+<tiles-definitions>
+	<definition name="baseLayout" template="/WEB-INF/tiles/layout/layout.jsp">
+		<put-attribute name="title" value="Employee Management System" />
+		<put-attribute name="header" value="/WEB-INF/tiles/layout/header.jsp" />
+		<put-attribute name="body" value="" />
+	</definition>
+
+	<definition name="home" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/tiles/body/home.jsp" />
+	</definition>
+        <definition name="deparmentSearchResult" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/tiles/body/deparmentSearchResult.jsp" />
+	</definition>
+        <definition name="departments" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/tiles/body/departments.jsp" />
+	</definition>
+        <definition name="employee" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/tiles/body/employee.jsp" />
+	</definition>
+        <definition name="searchresult" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/tiles/body/searchresult.jsp" />
+	</definition>
+        <definition name="notFound" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/tiles/body/notFound.jsp" />
+	</definition>
+        <definition name="newEmployee" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/tiles/body/newEmployee.jsp" />
+	</definition>
+          <definition name="editEmployee" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/tiles/body/editEmployee.jsp" />
+	</definition>
+         <definition name="newDepartment" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/tiles/body/newDepartment.jsp" />
+	</definition>
+        <definition name="department" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/tiles/body/department.jsp" />
+	</definition>
+        <definition name="editDepartment" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/tiles/body/editDepartment.jsp" />
+	</definition>
+</tiles-definitions>
